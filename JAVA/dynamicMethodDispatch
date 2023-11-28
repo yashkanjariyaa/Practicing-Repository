@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang;
+public class A {
+    void method(){
+        System.out.println("This is method of class A");
+    }
+}
+public class B extends A {
+    void method(){
+        System.out.println("This is mtehod of class B");
+    }
+}
+public class dynamicMethodDispatch{
+    public static void main(System.in){
+        A obj = new B();
+        B.method();
+    }
+}

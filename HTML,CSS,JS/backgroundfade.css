@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#backgroundchange {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("gradient4.png") no-repeat center fixed;
+}
+
+@keyframes backgroundchangeFadeInOut {
+  33% {
+    background-image: url("gradient1.png") no-repeat center fixed;
+  }
+  66% {
+    background-image: url("gradient2.png") no-repeat center fixed;
+  }
+  100% {
+    background-image: url("gradient3.png") no-repeat center fixed;
+  }
+}
+#backgroundchange div {
+animation-name: backgroundchangeFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 8s;
+
+-webkit-animation-name: backgroundchangeFadeInOut;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 8s;
+
+}

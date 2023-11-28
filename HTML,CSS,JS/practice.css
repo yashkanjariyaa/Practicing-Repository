@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    margin : 0px;
+}
+.sun{
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    position  : absolute;
+    margin : auto;
+    border-radius : 50%;
+}
+.planet{
+    border-radius : 50%;
+}
